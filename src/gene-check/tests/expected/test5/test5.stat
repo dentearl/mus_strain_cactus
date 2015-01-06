@@ -1,7 +1,0 @@
-acc	chr	chrStart	chrEnd	strand	stat	frame	start	stop	orfStop	cdsGap	cdsMult3Gap	utrGap	cdsUnknownSplice	utrUnknownSplice	cdsNonCanonSplice	utrNonCanonSplice	numExons	numCds	numUtr5	numUtr3	numCdsIntrons	numUtrIntrons	nmd	causes
-ENST00000316811	chr17	18159440	18167109	+	ok	ok	ok	ok	0	0	0	0	0	1	0	1	2	1	1	1	0	1	ok	
-OTTHUMT00000078569	chr20	29790753	29853264	+	ok	ok	ok	ok	0	0	0	0	0	1	0	1	18	16	2	1	15	2	ok	
-OTTHUMT00000078643	chr20	30814011	30860823	+	ok	ok	ok	ok	0	0	0	0	0	2	0	2	24	22	2	1	21	2	ok	
-OTTHUMT00000078644	chr20	30814011	30860823	+	ok	ok	ok	ok	0	0	0	0	0	2	0	2	23	21	2	1	20	2	ok	
-OTTHUMT00000078645	chr20	30814011	30860823	+	ok	ok	ok	ok	0	0	0	0	0	2	0	2	21	19	2	1	18	2	ok	
-NM_002716.3	chr11	111113814	111142379	-	ok	ok	ok	ok	0	0	0	1	0	0	0	0	15	15	1	1	14	0	ok	

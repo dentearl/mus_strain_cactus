@@ -1,9 +1,0 @@
-acc	problem	info	chr	chrStart	chrEnd
-NM_031413	unknownCdsSplice	GT..TT	chr22	16377907	16391341
-NM_005318	utrGap		chr22	36444331	36444343
-NM_014339_nmd1	unknownUtrSplice	AA..TT	chr22	15965941	15966600
-NM_014339_nmd1	unknownUtrSplice	AA..CT	chr22	15966700	15966800
-NM_016492.3	unknownCdsSplice	AA..GT	chr17	8392749	8392839
-NM_016492.3	unknownCdsSplice	GA..TA	chr17	8392956	8393141
-NM_016492.3	unknownCdsSplice	TC..CA	chr17	8393298	8393386
-NM_016492.3	unknownCdsSplice	AG..TT	chr17	8393472	8393696

@@ -1,2 +1,0 @@
-acc	chr	chrStart	chrEnd	strand	stat	frame	start	stop	orfStop	cdsGap	cdsMult3Gap	utrGap	cdsUnknownSplice	utrUnknownSplice	cdsNonCanonSplice	utrNonCanonSplice	numExons	numCds	numUtr5	numUtr3	numCdsIntrons	numUtrIntrons	nmd	causes
-bA484H12.1-001	chr13	16972123	16985652	+	err	noCDS	ok	ok	0	0	0	0	0	0	0	1	2	0	0	0	0	1	ok	noCds
