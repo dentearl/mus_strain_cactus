@@ -1,0 +1,41 @@
+How to validate the mysql sequence database against the fasta files.
+
+#####
+#0 Set variables, verify that ~/.my.cnf has the password
+species="FVBNJ NZOHlLtJ C57B6NJ AKRJ DBA2J CBAJ C3HHeJ C57B6J BALBcJ Rattus"
+
+#####
+#1 FROM mysql, write out the species names, sequence names, AND sequence lengths INTO one file per species.
+for s in $species; do
+  echo $s;
+  mysql --host=localhost --user=cgp -e "SELECT spp.speciesname, seq.seqname, sum(char_length(gen.dnaseq)) FROM seqnames seq, speciesnames spp, genomes gen WHERE spp.speciesid = seq.speciesid AND gen.seqnr = seq.seqnr AND gen.speciesid = seq.speciesid AND spp.speciesname = \"$s\" GROUP BY spp.speciesname, seq.seqname;" saeuger > $s.mysql.txt
+done
+for s in $species; do
+  # tail -n +2 $s.mysql.txt > $s.mysql.txt.tmp && mv $s.mysql.txt.tmp $s.mysql.txt
+  grep -v speciesname $s.mysql.txt > $s.mysql.txt.tmp && mv $s.mysql.txt.tmp $s.mysql.txt
+done
+
+#####
+#2 FROM the fasta files, Write out the species names, sequence names, and sequence lengths into one file per species.
+for s in $species; do
+  echo $s
+  faSize -detailed ../proj/data/$s.fa | sed "s/^/$s\t/" > $s.faSize.txt
+done
+
+#####
+#3 sort the two output files.
+for s in $species; do
+  sort -k2 $s.faSize.txt > $s.faSize.sorted.txt
+  sort -k2 $s.mysql.txt > $s.mysql.sorted.txt
+done
+
+#####
+#4 compare the two output files.
+for s in $species; do
+  diff $s.faSize.sorted.txt $s.mysql.sorted.txt
+done
+
+#####
+#Notes
+SELECT spp.speciesname, seq.seqname, seq.seqnr, gen.seqid, gen.start, gen.end, char_length(gen.dnaseq) FROM seqnames seq, speciesnames spp, genomes gen WHERE spp.speciesid = seq.speciesid AND gen.seqnr = seq.seqnr AND gen.speciesid = seq.speciesid AND spp.speciesname = "AKRJ" AND seq.seqname = "scaffold-102280";
+SELECT spp.speciesname, seq.seqname, sum(char_length(gen.dnaseq)) FROM seqnames seq, speciesnames spp, genomes gen WHERE spp.speciesid = seq.speciesid AND gen.seqnr = seq.seqnr AND gen.speciesid = seq.speciesid AND spp.speciesname = "AKRJ" AND seq.seqname = "scaffold-102280" GROUP BY spp.speciesname, seq.seqname;
