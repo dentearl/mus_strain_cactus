@@ -1,0 +1,2 @@
+acc	chr	chrStart	chrEnd	strand	stat	frame	start	stop	orfStop	cdsGap	cdsMult3Gap	utrGap	cdsUnknownSplice	utrUnknownSplice	cdsNonCanonSplice	utrNonCanonSplice	numExons	numCds	numUtr5	numUtr3	numCdsIntrons	numUtrIntrons	nmd	causes
+ENST00000245652	chr20	61136381	61138825	-	err	ok	ok	ok	0	1	0	0	0	0	0	0	3	2	2	0	1	1	ok	cdsGap

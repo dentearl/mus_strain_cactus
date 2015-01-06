@@ -1,0 +1,19 @@
+((SPRETEiJ:0.0020, (PWKPhJ:0.0010, (CASTEiJ:0.0010, (WSBEiJ:1.0E-5, (((NZOHlLtJ:1.0E-6, (C57B6NJ:1.0E-6, C57B6J:1.0E-6):1.0E-6):1.0E-6, ((NODShiLtJ:1.0E-6, FVBNJ:1.0E-6):1.0E-6, (((DBA2J:1.0E-6, (CBAJ:1.0E-6, C3HHeJ:1.0E-6):1.0E-6):1.0E-6, AKRJ:1.0E-6):1.0E-6, (BALBcJ:1.0E-6, AJ:1.0E-6):1.0E-6):1.0E-6):1.0E-6):1.0E-6, (LPJ:1.0E-6, 129S1:1.0E-6):1.0E-6):1.0E-6):1.0E-4):1.0E-6):1.0E-6):0.013, Rattus:0.013);
+129S1 ../fas/129S1.fa
+AJ ../fas/AJ.fa
+AKRJ ../fas/AKRJ.fa
+BALBcJ ../fas/BALBcJ.fa
+C3HHeJ ../fas/C3HHeJ.fa
+C57B6NJ ../fas/C57B6NJ.fa
+CASTEiJ ../fas/CASTEiJ.fa
+CBAJ ../fas/CBAJ.fa
+DBA2J ../fas/DBA2J.fa
+LPJ ../fas/LPJ.fa
+NODShiLtJ ../fas/NODShiLtJ.fa
+NZOHlLtJ ../fas/NZOHlLtJ.fa
+PWKPhJ ../fas/PWKPhJ.fa
+SPRETEiJ ../fas/SPRETEiJ.fa
+WSBEiJ ../fas/WSBEiJ.fa
+FVBNJ ../fas/FVBNJ.fa
+*C57B6J ../fas/C57B6J.fa
+*Rattus ../fas/Rattus.fa
